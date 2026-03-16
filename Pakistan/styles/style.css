@@ -1,0 +1,691 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  background:#f4f4f4;
+  line-height:1.6;
+}
+/* NAVBAR */
+.navbar{
+  background:#004225;
+  width:100%;
+}
+
+.nav-container{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:10px 40px;
+  width: 95%;
+  margin: auto;
+}
+
+/* LOGO */
+.logo img{
+  width:60px;
+  background-color: white ;
+  border-radius: 20px;
+}
+
+/* NAV LINKS */
+.navbar ul{
+  list-style:none;
+  display:flex;
+  align-items:center;
+  padding-right:  20px;
+}
+
+.navbar ul li{
+  position:relative;
+}
+
+.navbar ul li a{
+  text-decoration:none;
+  color:white;
+  padding:14px 18px;
+  display:block;
+  font-size:14px;
+  transition:0.3s;
+}
+
+.navbar ul li a:hover{
+    background:#046A38;
+    border-radius:4px;
+}
+
+
+.dropdown {
+    position: relative; 
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%; 
+  left: 0;
+  width: 150px;
+  background: #004225;
+  flex-direction: column;
+      opacity: 0;
+  transform: translateY(-10px);
+  visibility: hidden;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 10;
+}
+
+.dropdown-menu li {
+  display: block;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 10px;
+}
+
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hero{
+  background:linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),url("../images/hero.png");
+  background-size:cover;
+  background-position:center;
+  height:500px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:white;
+}
+
+
+.hero h1{
+  font-size:48px;
+  margin-bottom:15px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.hero p{
+font-size:18px;
+  max-width:700px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+/* INTRO SECTION */
+.intro{
+  background: linear-gradient(135deg, #ffffff, #86c289);
+  width: 75%;
+  margin: 60px auto;
+  padding: 40px;
+  border-radius: 6px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+  border-left: 6px solid #004225;
+}
+
+.intro h2{
+  text-align:center;
+  margin-bottom:30px;
+  font-size:32px;
+  color:#01411C;
+}
+
+.intro p{
+  margin-bottom:20px;
+  text-align:justify;
+  font-size:16px;
+}
+
+.footer{
+  background:#004225;
+  color:white;
+  text-align:center;
+  padding:20px;
+  margin-top:40px;
+}
+
+.info-box{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:20px;
+  padding:40px 10%;
+}
+
+.info-box .destinations{
+  display:block;
+  width:250px;
+  background:white;
+  border-radius:10px;
+  overflow:hidden;
+  text-decoration:none;
+  color:black;
+  box-shadow:0 4px 8px rgba(0,0,0,0.2);
+  transition:0.3s;
+}
+
+.info-box .destinations: hover{
+  transform:translateY(-5px);
+  box-shadow:0 8px 16px rgba(0,0,0,0.3);
+}
+
+.info-box .destinations img {
+  width:100%;
+  height:160px;
+  object-fit:cover;
+}
+
+.info-box .destinations h2{
+  color:#004225;
+  margin:15px;
+}
+
+.info-box .destinations p{
+  color:#004225;
+  margin:15px;
+}
+
+
+.footer p{
+  font-size:14px;
+}
+
+.hima{
+  background:linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),url("../images/himalayas.png");
+  background-size:cover;
+  background-position:center;
+  height:500px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:white;
+  }
+
+.hima h1{
+  font-size:48px;
+  margin-bottom:15px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.hima p{
+font-size:18px;
+  max-width:700px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.kara{
+  background:linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),url("../images/karakoram.jpg");
+  background-size:cover;
+  background-position:center;
+  height:500px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:white;
+}
+
+.kara h1{
+  font-size:48px;
+  margin-bottom:15px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.kara p{
+font-size:18px;
+  max-width:700px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.hindu{
+  background:linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),url("../images/hindu.jpg");
+  background-size:cover;
+  background-position:center;
+  height:500px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:white;
+}
+
+.hindu h1{
+  font-size:48px;
+  margin-bottom:15px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.hindu p{
+font-size:18px;
+  max-width:700px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.nat{
+  background:linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),url("../images/nat.jpg");
+  background-size:cover;
+  background-position:center;
+  height:500px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:white;
+}
+
+.nat h1{
+  font-size:48px;
+  margin-bottom:15px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.nat p{
+font-size:18px;
+  max-width:700px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.park{
+    padding:60px 10%;
+}
+
+/* park layout */
+.park{
+  width: 75%;
+  background: linear-gradient(135deg, #ffffff, #86c289);
+  display:flex;
+  align-items:center;
+  gap:40px;
+  margin: 60px auto;
+  padding: 40px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+  border: 0.5px solid black;
+  border-radius: 8px;
+
+
+}
+
+/* alternating layout */
+.park.reverse{
+  flex-direction:row-reverse;
+}
+
+/* images */
+.park img{
+  width:50%;
+  border-radius:10px;
+}
+
+/* text */
+.park-text{
+  width:50%;
+}
+
+.park-text h3{
+  color:#004225;
+  margin-bottom:10px;
+}
+
+.park-text p{
+  line-height:1.6;
+}
+
+.culture{
+  background:linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),url("../images/cult.jpg");
+  background-size:cover;
+  background-position:center;
+  height:500px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:white;
+}
+
+.culture h1{
+  font-size:48px;
+  margin-bottom:15px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.culture p{
+font-size:18px;
+  max-width:700px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.foody{
+  background:linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),url("../images/cuisine.jpg");
+  background-size:cover;
+  background-position:center;
+  height:500px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:white;
+}
+
+.foody h1{
+  font-size:48px;
+  margin-bottom:15px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.foody p{
+font-size:18px;
+  max-width:700px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.history{
+  background:linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),url("../images/his.jpg");
+  background-size:cover;
+  background-position:center;
+  height:500px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:white;
+}
+
+.history h1{
+  font-size:48px;
+  margin-bottom:15px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.history p{
+font-size:18px;
+  max-width:700px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.fes{
+  background:linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),url("../images/festival.jpg");
+  background-size:cover;
+  background-position:center;
+  height:500px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:white;
+}
+
+.fes h1{
+  font-size:48px;
+  margin-bottom:15px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.fes p{
+font-size:18px;
+  max-width:700px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.wildlife{
+  background:linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),url("../images/wild.jpg");
+  background-size:cover;
+  background-position:center;
+  height:500px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:white;
+}
+
+.wildlife h1{
+  font-size:48px;
+  margin-bottom:15px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.wildlife  p{
+font-size:18px;
+  max-width:700px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.reli{
+  background:linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),url("../images/religion.jpg");
+  background-size:cover;
+  background-position:center;
+  height:500px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:white;
+}
+
+.reli h1{
+  font-size:48px;
+  margin-bottom:15px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.reli  p{
+font-size:18px;
+  max-width:700px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.lake{
+  background:linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),url("../images/lakes.jpg");
+  background-size:cover;
+  background-position:center;
+  height:500px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:white;
+}
+
+.lake h1{
+  font-size:48px;
+  margin-bottom:15px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.lake  p{
+font-size:18px;
+  max-width:700px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.saif{
+  background:linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),url("../images/saif.jpg");
+  background-size:cover;
+  background-position:center;
+  height:500px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:white;
+}
+
+.saif h1{
+  font-size:48px;
+  margin-bottom:15px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.saif  p{
+font-size:18px;
+  max-width:700px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.attabad{
+  background:linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),url("../images/attabad.jpg");
+  background-size:cover;
+  background-position:center;
+  height:500px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:white;
+}
+
+.attabad h1{
+  font-size:48px;
+  margin-bottom:15px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.attabad  p{
+  font-size:18px;
+  max-width:700px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.sheosar{
+  background:linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),url("../images/sheosar.jpg");
+  background-size:cover;
+  background-position:center;
+  height:500px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:white;
+}
+
+.sheosar h1{
+  font-size:48px;
+  margin-bottom:15px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.sheosar  p{
+  font-size:18px;
+  max-width:700px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.desert{
+  background:linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),url("../images/des.jpg");
+  background-size:cover;
+  background-position:center;
+  height:500px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:white;
+}
+
+.desert h1{
+  font-size:48px;
+  margin-bottom:15px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.desert  p{
+  font-size:18px;
+  max-width:700px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.thar{
+  background:linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),url("../images/thar.jpg");
+  background-size:cover;
+  background-position:center;
+  height:500px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:white;
+}
+
+.thar h1{
+  font-size:48px;
+  margin-bottom:15px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.thar  p{
+  font-size:18px;
+  max-width:700px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+
+.chol{
+  background:linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),url("../images/chol.jpg");
+  background-size:cover;
+  background-position:center;
+  height:500px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:white;
+}
+
+.chol h1{
+  font-size:48px;
+  margin-bottom:15px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.chol  p{
+  font-size:18px;
+  max-width:700px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.kharan{
+  background:linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),url("../images/kharan.jpg");
+  background-size:cover;
+  background-position:center;
+  height:500px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:white;
+}
+
+.kharan h1{
+  font-size:48px;
+  margin-bottom:15px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.kharan  p{
+  font-size:18px;
+  max-width:700px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
